@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Pecky studios</title>
+    <link>https://peckystudios.com/categories/</link>
+    <description>Recent content in Categories on Pecky studios</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://peckystudios.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>筆記系統</title>
+      <link>https://peckystudios.com/categories/%E7%AD%86%E8%A8%98%E7%B3%BB%E7%B5%B1/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peckystudios.com/categories/%E7%AD%86%E8%A8%98%E7%B3%BB%E7%B5%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>角色設計</title>
+      <link>https://peckystudios.com/categories/%E8%A7%92%E8%89%B2%E8%A8%AD%E8%A8%88/</link>
+      <pubDate>Sat, 15 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peckystudios.com/categories/%E8%A7%92%E8%89%B2%E8%A8%AD%E8%A8%88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AfterEffects技巧</title>
+      <link>https://peckystudios.com/categories/aftereffects%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 16 Mar 2020 10:35:54 +0000</pubDate>
+      
+      <guid>https://peckystudios.com/categories/aftereffects%E6%8A%80%E5%B7%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>藝術創作</title>
+      <link>https://peckystudios.com/categories/%E8%97%9D%E8%A1%93%E5%89%B5%E4%BD%9C/</link>
+      <pubDate>Mon, 23 Dec 2019 17:55:56 +0000</pubDate>
+      
+      <guid>https://peckystudios.com/categories/%E8%97%9D%E8%A1%93%E5%89%B5%E4%BD%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>學習記錄</title>
+      <link>https://peckystudios.com/categories/%E5%AD%B8%E7%BF%92%E8%A8%98%E9%8C%84/</link>
+      <pubDate>Tue, 15 Oct 2019 15:53:19 +0000</pubDate>
+      
+      <guid>https://peckystudios.com/categories/%E5%AD%B8%E7%BF%92%E8%A8%98%E9%8C%84/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

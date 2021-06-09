@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='最近因為有想要做的創作，把該準備的東西攤開來看之後發現除了研究時間之外，還需要很多錢（omg~~~）。去年的展覽經驗 也讓我感受到，有時候雖然都只是準備小東西，買一買加起來也蠻多錢的XDD（錢不是萬能，但沒有錢真的萬萬不能啊～～）
+於是我就打算重新開始記帳，紀錄到底現在能讓自己過得舒服的基本消費是多少，可以撥多少錢來研究我想做的東西。最早在剛出社會的時候有為了了解自己的使用習慣而測試過幾個月，後來稍微穩定一點就沒有繼續記帳了。
+今年試了幾款以前有使用過的一秒記帳App，不知道為什麼今年的我就是會一直遺忘去使用他XD 可能已經很擅長直接無視手機的通知了吧！
+所以這次試著使用Notion來記帳！剛好我最近也有使用Notion自己設計自己的首頁（之後再來介紹），那就一起整合吧！
+Notion記帳表格 表格的部分我是參考這篇文章 修改成我自己需要的樣子。
+使用Notion的database來實現：
+歡迎直接複製Notion記帳模板 回去使用喔 :)
+如何製作Database 很簡單，只要在隨意空格打上/page開啟一個新的page就會出現下圖的畫面
+點選Table就可以開啟像首圖一樣的模式。
+標題可以隨意命名！
+表格欄位 我自己需求不多所以只有開啟以下欄位：
+ 第一格一定要有（他是database每個項目的Title），所以可以自己隨意命名，使用時可以不填寫，看需求。 日期：選擇表格屬性（Configure Options）到 date，紀錄花費時間用 分類：選擇表格屬性到Select（單選），紀錄花費分類使用 數字：選擇表格屬性到Number（數字），紀錄花費金額使用 個人/公司：選擇表格屬性到Select（單選），紀錄這個款項是用在哪裡使用 收入/支出：選擇表格屬性到Select（單選），紀錄款項是支出還是收入使用 Column：這個可有可無，他是表格屬性Created Time，功能是顯示增加這個項目的時間，我個人是拿來避免我沒填到時間用的。  這部分就是看個人習慣自己去設計表格。
+使用的時候只要按右上角的藍色New按鈕
+就會直接開啟新的一個項目Page，就可以開始填寫囉！
+欄位功能特點 Title： Database裡面的每一個項目都可以是一個Page，所以才會要求一定要有這個Title（就是Page的標題名稱），他代表了那一個項目裡面所有的資料。
+Date： 屬性設定完成之後，只要點擊可以填寫資料的地方，他就會跳出一個月曆讓你填寫日期。
+Select： 這個是單選，我們可以自由設定裡面的選項，一個欄位只能從這個選項裡面選擇一個屬性。
+顏色也可以自由更換喔！
+Number： 這個就是字面上的意思，可以輸入數字。裡面也有內建的可以顯示幣值，或是小數點等等的功能。
+Created Time 會自動出現我們創建這個項目的時間。
+如何可以更快速填寫這個表格？ 單用以上表格的話有個問題非常困擾我：
+每次新增項目都要一個一個欄位選項去選擇，Notion又不會AI演算我們這個時間通常會選什麼選項，不是很方便！
+後來誤打誤撞發現了一個技巧可以省略這個麻煩！而且非常簡單！
+我們點選表格左上角的「&#43; Add a View」
+一樣選擇 Table，命名為當日消費（這個可以隨意），之後點選create。
+確認左上角這邊出現剛剛命名的名字
+這樣我們就有一個新的View了
+ View的用途是，假設我們在這個database裡面擁有100個項目（Page），他們身上各有不一樣的標籤。
+我們有時候對於這些資料會有不一樣的需求去觀看他，比方說我每天都要確認自己在吃東西上花了多少錢，我就可以使用View去設定Filter：當日/分類包含早餐、午餐、晚餐。
+表格就會只顯示今天我花在正餐的費用會是多少，View會記住你在這裡的觀看方式。我們也可以直接點選左上角自由的更換不同的View，用不同的角度來看這一整個資料庫的內容。
+ 那就開啟「當日消費」的View來設定囉！
+點選Filter再點選&#43;Add a Filter
+選擇日期欄位/Is/Today：這個的意思就是篩選「日期」欄位「是」「今天」的項目。
+馬上就可以看到表格有了變化'><title>Notion記帳/iOS手機搭配捷徑App一鍵記帳，輕鬆將記帳資料整合至Notion</title>
+
+<link rel='canonical' href='https://peckystudios.com/p/notion-finance-tracker-workflow/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Notion記帳/iOS手機搭配捷徑App一鍵記帳，輕鬆將記帳資料整合至Notion'>
+<meta property='og:description' content='最近因為有想要做的創作，把該準備的東西攤開來看之後發現除了研究時間之外，還需要很多錢（omg~~~）。去年的展覽經驗 也讓我感受到，有時候雖然都只是準備小東西，買一買加起來也蠻多錢的XDD（錢不是萬能，但沒有錢真的萬萬不能啊～～）
+於是我就打算重新開始記帳，紀錄到底現在能讓自己過得舒服的基本消費是多少，可以撥多少錢來研究我想做的東西。最早在剛出社會的時候有為了了解自己的使用習慣而測試過幾個月，後來稍微穩定一點就沒有繼續記帳了。
+今年試了幾款以前有使用過的一秒記帳App，不知道為什麼今年的我就是會一直遺忘去使用他XD 可能已經很擅長直接無視手機的通知了吧！
+所以這次試著使用Notion來記帳！剛好我最近也有使用Notion自己設計自己的首頁（之後再來介紹），那就一起整合吧！
+Notion記帳表格 表格的部分我是參考這篇文章 修改成我自己需要的樣子。
+使用Notion的database來實現：
+歡迎直接複製Notion記帳模板 回去使用喔 :)
+如何製作Database 很簡單，只要在隨意空格打上/page開啟一個新的page就會出現下圖的畫面
+點選Table就可以開啟像首圖一樣的模式。
+標題可以隨意命名！
+表格欄位 我自己需求不多所以只有開啟以下欄位：
+ 第一格一定要有（他是database每個項目的Title），所以可以自己隨意命名，使用時可以不填寫，看需求。 日期：選擇表格屬性（Configure Options）到 date，紀錄花費時間用 分類：選擇表格屬性到Select（單選），紀錄花費分類使用 數字：選擇表格屬性到Number（數字），紀錄花費金額使用 個人/公司：選擇表格屬性到Select（單選），紀錄這個款項是用在哪裡使用 收入/支出：選擇表格屬性到Select（單選），紀錄款項是支出還是收入使用 Column：這個可有可無，他是表格屬性Created Time，功能是顯示增加這個項目的時間，我個人是拿來避免我沒填到時間用的。  這部分就是看個人習慣自己去設計表格。
+使用的時候只要按右上角的藍色New按鈕
+就會直接開啟新的一個項目Page，就可以開始填寫囉！
+欄位功能特點 Title： Database裡面的每一個項目都可以是一個Page，所以才會要求一定要有這個Title（就是Page的標題名稱），他代表了那一個項目裡面所有的資料。
+Date： 屬性設定完成之後，只要點擊可以填寫資料的地方，他就會跳出一個月曆讓你填寫日期。
+Select： 這個是單選，我們可以自由設定裡面的選項，一個欄位只能從這個選項裡面選擇一個屬性。
+顏色也可以自由更換喔！
+Number： 這個就是字面上的意思，可以輸入數字。裡面也有內建的可以顯示幣值，或是小數點等等的功能。
+Created Time 會自動出現我們創建這個項目的時間。
+如何可以更快速填寫這個表格？ 單用以上表格的話有個問題非常困擾我：
+每次新增項目都要一個一個欄位選項去選擇，Notion又不會AI演算我們這個時間通常會選什麼選項，不是很方便！
+後來誤打誤撞發現了一個技巧可以省略這個麻煩！而且非常簡單！
+我們點選表格左上角的「&#43; Add a View」
+一樣選擇 Table，命名為當日消費（這個可以隨意），之後點選create。
+確認左上角這邊出現剛剛命名的名字
+這樣我們就有一個新的View了
+ View的用途是，假設我們在這個database裡面擁有100個項目（Page），他們身上各有不一樣的標籤。
+我們有時候對於這些資料會有不一樣的需求去觀看他，比方說我每天都要確認自己在吃東西上花了多少錢，我就可以使用View去設定Filter：當日/分類包含早餐、午餐、晚餐。
+表格就會只顯示今天我花在正餐的費用會是多少，View會記住你在這裡的觀看方式。我們也可以直接點選左上角自由的更換不同的View，用不同的角度來看這一整個資料庫的內容。
+ 那就開啟「當日消費」的View來設定囉！
+點選Filter再點選&#43;Add a Filter
+選擇日期欄位/Is/Today：這個的意思就是篩選「日期」欄位「是」「今天」的項目。
+馬上就可以看到表格有了變化'>
+<meta property='og:url' content='https://peckystudios.com/p/notion-finance-tracker-workflow/'>
+<meta property='og:site_name' content='Pecky studios'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='個人成長' /><meta property='article:published_time' content='2020-03-13T18:21:38&#43;00:00'/><meta property='article:modified_time' content='2020-03-13T18:21:38&#43;00:00'/><meta property='og:image' content='https://peckystudios.com/p/notion-finance-tracker-workflow/notion-finance-tracker-workflow.png' />
+<meta name="twitter:title" content="Notion記帳/iOS手機搭配捷徑App一鍵記帳，輕鬆將記帳資料整合至Notion">
+<meta name="twitter:description" content="最近因為有想要做的創作，把該準備的東西攤開來看之後發現除了研究時間之外，還需要很多錢（omg~~~）。去年的展覽經驗 也讓我感受到，有時候雖然都只是準備小東西，買一買加起來也蠻多錢的XDD（錢不是萬能，但沒有錢真的萬萬不能啊～～）
+於是我就打算重新開始記帳，紀錄到底現在能讓自己過得舒服的基本消費是多少，可以撥多少錢來研究我想做的東西。最早在剛出社會的時候有為了了解自己的使用習慣而測試過幾個月，後來稍微穩定一點就沒有繼續記帳了。
+今年試了幾款以前有使用過的一秒記帳App，不知道為什麼今年的我就是會一直遺忘去使用他XD 可能已經很擅長直接無視手機的通知了吧！
+所以這次試著使用Notion來記帳！剛好我最近也有使用Notion自己設計自己的首頁（之後再來介紹），那就一起整合吧！
+Notion記帳表格 表格的部分我是參考這篇文章 修改成我自己需要的樣子。
+使用Notion的database來實現：
+歡迎直接複製Notion記帳模板 回去使用喔 :)
+如何製作Database 很簡單，只要在隨意空格打上/page開啟一個新的page就會出現下圖的畫面
+點選Table就可以開啟像首圖一樣的模式。
+標題可以隨意命名！
+表格欄位 我自己需求不多所以只有開啟以下欄位：
+ 第一格一定要有（他是database每個項目的Title），所以可以自己隨意命名，使用時可以不填寫，看需求。 日期：選擇表格屬性（Configure Options）到 date，紀錄花費時間用 分類：選擇表格屬性到Select（單選），紀錄花費分類使用 數字：選擇表格屬性到Number（數字），紀錄花費金額使用 個人/公司：選擇表格屬性到Select（單選），紀錄這個款項是用在哪裡使用 收入/支出：選擇表格屬性到Select（單選），紀錄款項是支出還是收入使用 Column：這個可有可無，他是表格屬性Created Time，功能是顯示增加這個項目的時間，我個人是拿來避免我沒填到時間用的。  這部分就是看個人習慣自己去設計表格。
+使用的時候只要按右上角的藍色New按鈕
+就會直接開啟新的一個項目Page，就可以開始填寫囉！
+欄位功能特點 Title： Database裡面的每一個項目都可以是一個Page，所以才會要求一定要有這個Title（就是Page的標題名稱），他代表了那一個項目裡面所有的資料。
+Date： 屬性設定完成之後，只要點擊可以填寫資料的地方，他就會跳出一個月曆讓你填寫日期。
+Select： 這個是單選，我們可以自由設定裡面的選項，一個欄位只能從這個選項裡面選擇一個屬性。
+顏色也可以自由更換喔！
+Number： 這個就是字面上的意思，可以輸入數字。裡面也有內建的可以顯示幣值，或是小數點等等的功能。
+Created Time 會自動出現我們創建這個項目的時間。
+如何可以更快速填寫這個表格？ 單用以上表格的話有個問題非常困擾我：
+每次新增項目都要一個一個欄位選項去選擇，Notion又不會AI演算我們這個時間通常會選什麼選項，不是很方便！
+後來誤打誤撞發現了一個技巧可以省略這個麻煩！而且非常簡單！
+我們點選表格左上角的「&#43; Add a View」
+一樣選擇 Table，命名為當日消費（這個可以隨意），之後點選create。
+確認左上角這邊出現剛剛命名的名字
+這樣我們就有一個新的View了
+ View的用途是，假設我們在這個database裡面擁有100個項目（Page），他們身上各有不一樣的標籤。
+我們有時候對於這些資料會有不一樣的需求去觀看他，比方說我每天都要確認自己在吃東西上花了多少錢，我就可以使用View去設定Filter：當日/分類包含早餐、午餐、晚餐。
+表格就會只顯示今天我花在正餐的費用會是多少，View會記住你在這裡的觀看方式。我們也可以直接點選左上角自由的更換不同的View，用不同的角度來看這一整個資料庫的內容。
+ 那就開啟「當日消費」的View來設定囉！
+點選Filter再點選&#43;Add a Filter
+選擇日期欄位/Is/Today：這個的意思就是篩選「日期」欄位「是」「今天」的項目。
+馬上就可以看到表格有了變化"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://peckystudios.com/p/notion-finance-tracker-workflow/notion-finance-tracker-workflow.png' />
+    <link rel="shortcut icon" href="/img/branding/logo_tran-48x48.ico" />
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-SMYRRHDDXY', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu69854555a6f578f049901cabb1f79e7e_6034_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">❤️</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://peckystudios.com">Pecky studios</a></h1>
+        <h2 class="site-description">Everyone is ARTIST!</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'  >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'  >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://peckyhsieh.wixsite.com/peckyhsieh' target="_blank" rel="noopener">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brush" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 21v-4a4 4 0 1 1 4 4h-4" />
+  <path d="M21 3a16 16 0 0 0 -12.8 10.2" />
+  <path d="M21 3a16 16 0 0 1 -10.2 12.8" />
+  <path d="M10.6 9a9 9 0 0 1 4.4 4.4" />
+</svg>
+                
+                <span>Portfolio</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'  >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'  >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://peckystudios.github.io/' target="_blank" rel="noopener">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-seeding" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
+  <path d="M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
+  <line x1="12" y1="20" x2="12" y2="10" />
+</svg>
+                
+                <span>Digital Garden</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://www.rakuten.com.tw/shop/peckystudio/' target="_blank" rel="noopener">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="3" y1="21" x2="21" y2="21" />
+  <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
+  <line x1="5" y1="21" x2="5" y2="10.85" />
+  <line x1="19" y1="21" x2="19" y2="10.85" />
+  <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+</svg>
+                
+                <span>Store</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://peckystudios.com" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/notion-finance-tracker-workflow/">
+                <img src="/p/notion-finance-tracker-workflow/notion-finance-tracker-workflow_hu2b510bf149143268a300d2e27d3c25d8_205103_800x0_resize_box_2.png"
+                        srcset="/p/notion-finance-tracker-workflow/notion-finance-tracker-workflow_hu2b510bf149143268a300d2e27d3c25d8_205103_800x0_resize_box_2.png 800w, /p/notion-finance-tracker-workflow/notion-finance-tracker-workflow_hu2b510bf149143268a300d2e27d3c25d8_205103_1600x0_resize_box_2.png 1600w"
+                        width="800" 
+                        height="395" 
+                        loading="lazy"
+                        alt="Featured image of post Notion記帳/iOS手機搭配捷徑App一鍵記帳，輕鬆將記帳資料整合至Notion" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <h2 class="article-title">
+        <a href="/p/notion-finance-tracker-workflow/">Notion記帳/iOS手機搭配捷徑App一鍵記帳，輕鬆將記帳資料整合至Notion</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Mar 13, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p>最近因為有想要做的創作，把該準備的東西攤開來看之後發現除了研究時間之外，還需要很多錢（omg~~~）。去年的<a href="https://peckyhsieh.com/140/2019tiff/" target="_blank">
+  展覽經驗
+</a>也讓我感受到，有時候雖然都只是準備小東西，買一買加起來也蠻多錢的XDD（錢不是萬能，但沒有錢真的萬萬不能啊～～）</p>
+<p>於是我就打算重新開始記帳，紀錄到底現在能讓自己過得舒服的基本消費是多少，可以撥多少錢來研究我想做的東西。最早在剛出社會的時候有為了了解自己的使用習慣而測試過幾個月，後來稍微穩定一點就沒有繼續記帳了。</p>
+<p>今年試了幾款以前有使用過的一秒記帳App，不知道為什麼今年的我就是會一直遺忘去使用他XD 可能已經很擅長直接無視手機的通知了吧！</p>
+<p>所以這次試著使用Notion來記帳！剛好我最近也有使用Notion自己設計自己的首頁（之後再來介紹），那就一起整合吧！</p>
+<h1 id="notion記帳表格">Notion記帳表格</h1>
+<p>表格的部分我是參考<a href="https://blog.prototypr.io/how-i-built-a-finance-tracker-tool-in-notion-with-template-3431464cf396" target="_blank">
+  這篇文章
+</a>修改成我自己需要的樣子。</p>
+<p>使用Notion的database來實現：</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/%e8%9e%a2%e5%b9%95%e5%bf%ab%e7%85%a7-2020-03-13-%e4%b8%8b%e5%8d%8811.41.15-1024x505.png" alt=""  /></p>
+<p>歡迎直接複製<a href="https://www.notion.so/peckyhsieh/8e2cd4e41e3e471b9e102dcba2ec8f2e?v=600a5053f68649f9bca1beb0dae0cbd8" target="_blank">
+  Notion記帳模板
+</a>回去使用喔 :)</p>
+<h2 id="如何製作database">如何製作Database</h2>
+<p>很簡單，只要在隨意空格打上/page開啟一個新的page就會出現下圖的畫面</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/098A691E-03D0-4098-9383-C200AD052633-1024x421.png" alt=""  /></p>
+<p>點選Table就可以開啟像首圖一樣的模式。</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/488221E7-7B40-4DF5-91C3-F67C8A35FCC2-1024x304.png" alt=""  /></p>
+<p>標題可以隨意命名！</p>
+<h2 id="表格欄位">表格欄位</h2>
+<p>我自己需求不多所以只有開啟以下欄位：</p>
+<ul>
+<li>第一格一定要有（他是database每個項目的Title），所以可以自己隨意命名，使用時可以不填寫，看需求。</li>
+<li>日期：選擇表格屬性（Configure Options）到 date，紀錄花費時間用</li>
+<li>分類：選擇表格屬性到Select（單選），紀錄花費分類使用</li>
+<li>數字：選擇表格屬性到Number（數字），紀錄花費金額使用</li>
+<li>個人/公司：選擇表格屬性到Select（單選），紀錄這個款項是用在哪裡使用</li>
+<li>收入/支出：選擇表格屬性到Select（單選），紀錄款項是支出還是收入使用</li>
+<li>Column：這個可有可無，他是表格屬性Created Time，功能是顯示增加這個項目的時間，我個人是拿來避免我沒填到時間用的。</li>
+</ul>
+<p>這部分就是看個人習慣自己去設計表格。</p>
+<p>使用的時候只要按右上角的藍色New按鈕</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/D425A2AD-C7BD-42CD-AC70-75EE12A44CD1-1024x189.png" alt=""  /></p>
+<p>就會直接開啟新的一個項目Page，就可以開始填寫囉！</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-1-1024x513.png" alt=""  /></p>
+<h2 id="欄位功能特點">欄位功能特點</h2>
+<h3 id="title">Title：</h3>
+<p>Database裡面的每一個項目都可以是一個Page，所以才會要求一定要有這個Title（就是Page的標題名稱），他代表了那一個項目裡面所有的資料。</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-2-1024x203.png" alt=""  /></p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-3-1024x462.png" alt=""  /></p>
+<h3 id="date">Date：</h3>
+<p>屬性設定完成之後，只要點擊可以填寫資料的地方，他就會跳出一個月曆讓你填寫日期。</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-4.png" alt=""  /></p>
+<h3 id="select">Select：</h3>
+<p>這個是單選，我們可以自由設定裡面的選項，一個欄位只能從這個選項裡面選擇一個屬性。</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-5.png" alt=""  /></p>
+<p>顏色也可以自由更換喔！</p>
+<h3 id="number">Number：</h3>
+<p>這個就是字面上的意思，可以輸入數字。裡面也有內建的可以顯示幣值，或是小數點等等的功能。</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-6.png" alt=""  /></p>
+<h3 id="created-time">Created Time</h3>
+<p>會自動出現我們創建這個項目的時間。</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-7.png" alt=""  /></p>
+<h2 id="如何可以更快速填寫這個表格">如何可以更快速填寫這個表格？</h2>
+<p>單用以上表格的話有個問題非常困擾我：</p>
+<p><em>每次新增項目都要一個一個欄位選項去選擇，Notion又不會AI演算我們這個時間通常會選什麼選項，不是很方便！</em></p>
+<p>後來誤打誤撞發現了一個技巧可以省略這個麻煩！而且非常簡單！</p>
+<p>我們點選表格左上角的「+ Add a View」</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-8-1024x330.png" alt=""  /></p>
+<p>一樣選擇 Table，命名為當日消費（這個可以隨意），之後點選create。</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-9.png" alt=""  /></p>
+<p>確認左上角這邊出現剛剛命名的名字<br>
+這樣我們就有一個新的View了</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-10-1024x392.png" alt=""  /></p>
+<blockquote>
+<p>View的用途是，假設我們在這個database裡面擁有100個項目（Page），他們身上各有不一樣的標籤。<br>
+我們有時候對於這些資料會有不一樣的需求去觀看他，比方說我每天都要確認自己在吃東西上花了多少錢，我就可以使用View去設定Filter：當日/分類包含早餐、午餐、晚餐。<br>
+表格就會只顯示今天我花在正餐的費用會是多少，View會記住你在這裡的觀看方式。我們也可以直接點選左上角自由的更換不同的View，用不同的角度來看這一整個資料庫的內容。</p>
+</blockquote>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-11.png" alt=""  /></p>
+<p>那就開啟「當日消費」的View來設定囉！</p>
+<p>點選Filter再點選+Add a Filter</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-12.png" alt=""  /></p>
+<p>選擇日期欄位/Is/Today：這個的意思就是篩選「日期」欄位「是」「今天」的項目。</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-13.png" alt=""  /></p>
+<p>馬上就可以看到表格有了變化</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-14-1024x137.png" alt=""  /></p>
+<p>空的是因為我今天還沒有輸入任何東西XD<br>
+我們馬上來試試看吧！</p>
+<p>點選右上角的New！</p>
+<p>就會發現哇！他幫我自動填寫今天的日期了！</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-15-1024x517.png" alt=""  /></p>
+<p>大家可以比較一下如果沒有這樣設定這個輸入的時間會差多少，我個人是覺得選日期在手機上是有點痛苦XD 很難點選</p>
+<p>同樣的道理，我們還可以依據需求在Filter加入更多屬性讓他自動填寫</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-16.png" alt=""  /></p>
+<p>這是我平常使用的，我只有留數字和分類給我自己填寫，其他都自動。</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-17-1024x447.png" alt=""  /></p>
+<p>這樣每次輸入就只要填寫2欄就可以了！真的很方便！懶人必備技巧！</p>
+<h1 id="使用ios手機的捷徑app來達成一鍵記帳">使用iOS手機的捷徑App來達成一鍵記帳</h1>
+<p>這個部分也是我突（懶）發（癌）奇（發）想（作），生出來的XDD</p>
+<p>這一個part需要使用到 iOS 特有的<a href="https://www.appcoda.com/working-url-schemes-ios/" target="_blank">
+  URL Schemes
+</a>來呼叫出 Notion 的特定頁面，稍微有點複雜，但照著以下步驟做就可以實現囉！</p>
+<ol>
+<li>請務必確認自己的記帳 Page 要放置在哪裡，這個會影響到 URL Schemes 寫的 Code，不想改來改去的話就先放定位吧！</li>
+<li>打開記帳 Page（要以 Page 的方式打開），將 notion.so/ 後面的文字都先存下來（請注意每個人 Page 的碼都不一樣，不要傻傻的複製我的了）</li>
+</ol>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-18-1024x498.png" alt=""  /></p>
+<p>3. 雖然 Notion 官方還沒有正式公布 URL Schemes ，但我在 <a href="https://www.reddit.com/r/NotionSo/comments/ddppgl/callback_url_and_ios_shortcut_integration/" target="_blank">
+  reddit
+</a> 找到了：</p>
+<pre><code>There is no official supports but I found Notion on iOS does support this.
+
+If you note URL is: https://www.notion.so/&lt;namespace&gt;\`/``&lt;note_id&gt;, you can create a custom scheme asnotion://&lt;namespace&gt;/&lt;note_id&gt;`.
+
+Then you do something like this in Siri Shortcut
+
+Edited:
+
+- notion://... is a custom scheme, not a callback URL.
+
+- notion://notion.so/&lt;namespace&gt;/&lt;note_id&gt; works better.
+</code></pre><p>如果看不懂也沒關係，我們只要把我們剛剛複製下來的東西直接貼到以下文字後面即可：</p>
+<p><code>notion://notion.so/</code></p>
+<p>好了之後先保存備用。</p>
+<p>4. 開啟iPhone，打開捷徑，點選製作捷徑</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-19-576x1024.png" alt=""  /></p>
+<p>5. 點選加入動作，選擇網頁，再點選Safari分類下面的打開URL</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-20-576x1024.png" alt=""  /></p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-21-571x1024.png" alt=""  /></p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-22-576x1024.png" alt=""  /></p>
+<p>6. 點擊半透明的URL，貼上剛剛已經保存好的那串文字 ，按下一步</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-23-576x1024.png" alt=""  /></p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/IMG_4717-576x1024.jpg" alt=""  /></p>
+<p>7. 輸入一個自己喜歡的名字，點選左邊icon可以自己選擇喜歡的顏色和icon ，按完成！</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-24-576x1024.png" alt=""  /></p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-25-576x1024.png" alt=""  /></p>
+<p>8. 燈等～現在就可以按按看這個捷徑，是不是馬上就連到記帳頁面了呢？這樣就完成了喔！</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-26-576x1024.png" alt=""  /></p>
+<h2 id="bonus我想要直接從桌面飛到記帳頁面可以嗎">Bonus！我想要直接從桌面飛～到記帳頁面可以嗎？</h2>
+<p>可以！捷徑App真的很方便！</p>
+<p>我們再進入一次剛剛那個捷徑的編輯頁面，點選捷徑右上角的「…」</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-27-586x1024.png" alt=""  /></p>
+<p>再點選編輯頁面右上角的「…」</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-28-576x1024.png" alt=""  /></p>
+<p>點擊「加入主畫面」</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-29-576x1024.png" alt=""  /></p>
+<p>再依照個人喜好編輯icon和名稱，修改後按加入</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-30-576x1024.png" alt=""  /></p>
+<p>就可以在桌面看到icon囉！</p>
+<p><img src="https://peckyhsieh.com/wp-content/uploads/2020/03/image-31-576x1024.png" alt=""  /></p>
+<p>點選之後就會執行捷徑並且連結到 Notion 記帳的頁面，是不是很方便呢～！</p>
+<h1 id="結語">結語</h1>
+<p>目前大約使用了半個月，覺得還不錯，不用分散各種資料在不同App是最吸引我的一點。</p>
+<p>可以開發各種讓自己懶散的工具的過程對我來說也是一個很有趣的點XDD</p>
+<p>很希望這件事能幫助自己在應用錢的時候比較好規劃！</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%80%8B%E4%BA%BA%E6%88%90%E9%95%B7/">個人成長</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "peckystudios" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 Pecky studios
+    </section>
+    
+    <section class="powerby">
+        
+            Happy with my Blog. <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
